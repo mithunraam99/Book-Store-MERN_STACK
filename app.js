@@ -9,7 +9,8 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const expressValidator = require('express-validator');
 const cors = require('cors');
-
+require('dotenv').config()
+const app = express();
 //import routes
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
@@ -48,9 +49,6 @@ app.use('/api', productRoutes);
 app.use('/api', braintreeRoutes);
 app.use('/api', orderRoutes);
 
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
-}
 
 
 if (process.env.NODE_ENV === 'production')
@@ -62,6 +60,6 @@ if (process.env.NODE_ENV === 'production')
     });
 }
 
-
+const port = process.env.port || 5000;
 app.set('port', (process.env.port || 5000));
 app.listen(port, () => console.log(`Example app listening on port port!`));

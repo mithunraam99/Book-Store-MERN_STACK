@@ -1,4 +1,4 @@
-//const User = require('../modules/user');
+const User = require('../modules/user');
 const braintree = require('braintree');
 require('dotenv').config();
 
