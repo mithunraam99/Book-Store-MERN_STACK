@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const expressValidator = require('express-validator');
 const cors = require('cors');
-require('dotenv').config()
+require('dotenv').config();
 const app = express();
 //import routes
 const authRoutes = require('./routes/auth');
