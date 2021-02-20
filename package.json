@@ -9,7 +9,7 @@
     },
     "scripts": {
         "client-install": "npm install --prefix client",
-        "start": "node app.js",
+        "start": " set NODE_ENV=production && node app.js",
         "server": "nodemon app.js",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
