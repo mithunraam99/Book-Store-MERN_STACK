@@ -1,7 +1,6 @@
 import React from 'react';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import axios from 'axios';
-require('dotenv').config();
 
 const Facebook = ({ informParent }) => {
     const responseFacebook = response => {

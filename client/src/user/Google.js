@@ -1,7 +1,6 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import axios from 'axios';
-require('dotenv').config();
 
 const Google = ({ informParent = f => f }) => {
     const responseGoogle = response => {
