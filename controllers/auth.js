@@ -7,6 +7,7 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const { OAuth2Client } = require('google-auth-library');
 const fetch = require('node-fetch');
+require('dotenv').config();
 
 
 //using async/await
