@@ -1,0 +1,47 @@
+{
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "Ecommerce-website",
+    "main": "app.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node app.js",
+        "server": "nodemon app.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@sendgrid/mail": "^7.2.2",
+        "body-parser": "^1.19.0",
+        "braintree": "^2.23.0",
+        "config": "^3.3.1",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-jwt": "^6.0.0",
+        "express-validator": "^6.2.0",
+        "formidable": "^1.2.2",
+        "google-auth-library": "^7.0.2",
+        "js-cookie": "^2.2.1",
+        "jsonwebtoken": "^8.5.1",
+        "loadash": "^1.0.0",
+        "lodash": "^4.17.19",
+        "mongoose": "^5.9.25",
+        "morgan": "^1.10.0",
+        "node-fetch": "^2.6.0",
+        "nodemon": "^2.0.4",
+        "react-facebook-login": "^4.1.1",
+        "react-google-login": "^5.1.21",
+        "react-toastify": "^6.0.8",
+        "uuid": "^8.2.0"
+    }
+}
