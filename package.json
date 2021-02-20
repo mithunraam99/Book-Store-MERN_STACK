@@ -46,7 +46,6 @@
         "react-google-login": "^5.1.21",
         "react-toastify": "^6.0.8",
         "serve": "^11.3.2",
-        "serve-favicon": "^2.5.0",
         "uuid": "^8.2.0"
     }
 }
