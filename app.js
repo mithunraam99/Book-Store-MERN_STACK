@@ -2,7 +2,7 @@ const express = require("express");
 //require("dotenv").config();
 const mongoose = require("mongoose");
 const config = require('config');
-const db = config.get('MONGO_URI');
+// const db = config.get('MONGO_URI');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -18,7 +18,7 @@ const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
 const braintreeRoutes = require('./routes/braintree');
 const orderRoutes = require('./routes/order');
-
+const db = process.env.ATLAS_URI;
 
 //db connection
 mongoose
