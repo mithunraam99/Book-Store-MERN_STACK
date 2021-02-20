@@ -33,6 +33,7 @@
         "express-validator": "^6.2.0",
         "formidable": "^1.2.2",
         "google-auth-library": "^7.0.2",
+        "husky": "^5.0.9",
         "js-cookie": "^2.2.1",
         "jsonwebtoken": "^8.5.1",
         "loadash": "^1.0.0",
