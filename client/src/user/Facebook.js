@@ -1,22 +1,22 @@
-import React from 'react';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import axios from 'axios';
-
+import React from "react";
+import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+import axios from "axios";
+require("dotenv").config();
 const Facebook = ({ informParent }) => {
-    const responseFacebook = response => {
+    const responseFacebook = (response) => {
         console.log(response);
         axios({
-                method: 'POST',
+                method: "POST",
                 url: `${process.env.REACT_APP_API_URL}/facebook-login`,
-                data: { userID: response.userID, accessToken: response.accessToken }
+                data: { userID: response.userID, accessToken: response.accessToken },
             })
-            .then(response => {
-                console.log('FACEBOOK SIGNIN SUCCESS', response.data);
+            .then((response) => {
+                console.log("FACEBOOK SIGNIN SUCCESS", response.data);
                 // inform parent component
                 informParent(response.data);
             })
-            .catch(error => {
-                console.log('FACEBOOK SIGNIN ERROR', error.response);
+            .catch((error) => {
+                console.log("FACEBOOK SIGNIN ERROR", error.response);
             });
     };
     return ( <
@@ -26,15 +26,15 @@ const Facebook = ({ informParent }) => {
         autoLoad = { false }
         callback = { responseFacebook }
         render = {
-            renderProps => ( <
+            (renderProps) => ( <
                 button onClick = { renderProps.onClick }
                 className = "btn btn-primary btn-lg btn-block" >
                 <
-                i className = "fab fa-facebook pr-2" > < /i> Login with Facebook <
+                i className = "fab fa-facebook pr-2" > < /i> Login with Facebook{" "} <
                 /button>
             )
         }
-        /> <
+        />{" "} <
         /div>
     );
 };
