@@ -45,6 +45,7 @@
         "react-facebook-login": "^4.1.1",
         "react-google-login": "^5.1.21",
         "react-toastify": "^6.0.8",
+        "serve": "^11.3.2",
         "uuid": "^8.2.0"
     }
 }
