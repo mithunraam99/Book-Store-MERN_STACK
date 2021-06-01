@@ -9,8 +9,8 @@ import Facebook from "./Facebook";
 
 const Signin = () => {
   const [values, setValues] = useState({
-    email: "mithunsam1999@gmail.com",
-    password: "12345678",
+    email: "",
+    password: "",
     error: "",
     loading: false,
     redirectToReferrer: false,
