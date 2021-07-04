@@ -7,16 +7,11 @@
 
 
 #### Tools and Packages:
- * express
- * bcryptjs
- * config
  * jsonwebtoken
  * mongoose
- * request
  * bodyparser
  * morgan
  * express-validator
- * jwt
  * loadash
  * crypto
  * formidable
