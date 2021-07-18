@@ -1,4 +1,4 @@
-# Book-Store-MERN_STACK
+# Book Store - MERN_STACK
 ### DEMO: __https://book-store-mern.herokuapp.com/__
 
 ##### A Book-Store website using MERN Stack with filtering options, cart, Google and Facebbok login system, payment processing and email alert for users and admin.
