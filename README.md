@@ -5,13 +5,3 @@
 ### Front-End: Html, CSS, JavaScript, React, Bootstrap
 ### Back-End: Node.js, Express, MongoDB
 
-
-#### Tools and Packages:
- * jsonwebtoken
- * mongoose
- * bodyparser
- * morgan
- * express-validator
- * loadash
- * crypto
- * formidable
